@@ -2,26 +2,112 @@ body,
 html,
 :root > div {
   height: 100%;
+  text-align: center;
 }
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .dark-mode {
-  background-color: #20295a;
-  color: white;
+  background-color: #2a2c31;
+  color: #fffff7;
   height: 100vh;
 }
 
 .light-mode {
-  background-color: white;
+  background-color: #fffff7;
   color: #20295a;
   height: 100vh;
 }
 
 svg {
-  z-index: -1;
+  margin-top: 20vh;
+  justify-content: center;
+  width: 80vh;
+}
+
+/* ----------------- Toggle Button --------------------- */
+
+.onoffswitch {
+  position: relative;
+  top: 2%;
+  left: 2%;
+  width: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 5px;
+  padding: 0;
+  line-height: 5px;
+  font-size: 14px;
+  color: #2a2c31;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "";
+  padding-left: 10px;
+  background-color: #2a2c31;
+}
+.onoffswitch-inner:after {
+  content: "";
+  padding-right: 10px;
+  background-color: #eeeeee;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 15px;
+  margin: -5px;
+  background: #999999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 31px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+/* =================== Media Queries =================== */
+
+@media screen and (max-width: 830px) {
+  svg {
+    margin-top: 30vh;
+    width: 50%;
+  }
 }
