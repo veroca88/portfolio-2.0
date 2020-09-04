@@ -1,25 +1,15 @@
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
 
 export default function MainPage() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <div className="onoffswitch">
-        <input
-          type="checkbox"
-          name="onoffswitch"
-          className="onoffswitch-checkbox"
-          id="myonoffswitch"
-          tabindex="0"
-          checked={darkMode}
-          onChange={() => setDarkMode(!darkMode)}
-        />
-        <label className="onoffswitch-label" for="myonoffswitch">
-          <span className="onoffswitch-inner"></span>
-          <span className="onoffswitch-switch"></span>
-        </label>
-      </div>
-
+      <i
+        class="far fa-lightbulb fa-2x icon-toggle"
+        style={{ color: darkMode ? "#999999" : "#fdab00" }}
+        onClick={() => setDarkMode(!darkMode)}
+      ></i>
       {darkMode ? (
         <svg viewBox="0 0 1110 749" xmlns="http://www.w3.org/2000/svg">
           <rect width="1110" height="749" fill="#2A2C31" />
@@ -2144,6 +2134,8 @@ export default function MainPage() {
           </defs>
         </svg>
       )}
+      <h1>I'm Veronica</h1>
+      <h2>a web developer</h2>
     </div>
   );
 }

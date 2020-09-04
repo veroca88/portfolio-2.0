@@ -11,6 +11,17 @@ html,
   font-family: "Roboto Mono", monospace;
 }
 
+h1 {
+  font-family: "Kufam", cursive !important;
+  line-height: 1.5;
+  font-size: 7vh;
+}
+
+h2 {
+  font-family: "Gayathri", sans-serif !important;
+  font-size: 4vh;
+}
+
 .dark-mode {
   background-color: #2a2c31;
   color: #fffff7;
@@ -24,90 +35,27 @@ html,
 }
 
 svg {
-  margin-top: 20vh;
+  margin-top: 5%;
   justify-content: center;
   width: 80vh;
 }
 
-/* ----------------- Toggle Button --------------------- */
-
-.onoffswitch {
+.icon-toggle {
+  display: flex;
   position: relative;
-  top: 2%;
-  left: 2%;
-  width: 30px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-.onoffswitch-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #999999;
-  border-radius: 20px;
-}
-.onoffswitch-inner {
-  display: block;
-  width: 200%;
-  margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before,
-.onoffswitch-inner:after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 5px;
-  padding: 0;
-  line-height: 5px;
-  font-size: 14px;
-  color: #2a2c31;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-  content: "";
-  padding-left: 10px;
-  background-color: #2a2c31;
-}
-.onoffswitch-inner:after {
-  content: "";
-  padding-right: 10px;
-  background-color: #eeeeee;
-  text-align: right;
+  align-self: flex-start;
+  top: 3%;
+  left: 3%;
 }
 
-.onoffswitch-switch {
-  display: block;
-  width: 15px;
-  margin: -5px;
-  background: #999999;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 31px;
-  border: 2px solid #999999;
-  border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
-}
 /* =================== Media Queries =================== */
 
 @media screen and (max-width: 830px) {
   svg {
-    margin-top: 30vh;
     width: 50%;
+  }
+
+  .icon-toggle {
+    font-size: 1.5em;
   }
 }
