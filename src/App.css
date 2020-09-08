@@ -1,14 +1,15 @@
 body,
 html,
 :root > div {
-  height: 100%;
-  text-align: center;
+  width: auto;
 }
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -19,43 +20,104 @@ h1 {
 
 h2 {
   font-family: "Gayathri", sans-serif !important;
-  font-size: 4vh;
+}
+.mode {
+  height: 100vh;
+  /* overflow: hidden; */
 }
 
 .dark-mode {
   background-color: #2a2c31;
   color: #fffff7;
-  height: 100vh;
 }
 
 .light-mode {
   background-color: #fffff7;
   color: #20295a;
-  height: 100vh;
 }
 
 svg {
-  margin-top: 5%;
+  margin-top: 8%;
+  margin-bottom: 2%;
   justify-content: center;
   width: 80vh;
 }
 
 .icon-toggle {
-  display: flex;
+  position: fixed;
+  cursor: pointer;
+  top: 4vh;
+  right: 5vh;
+}
+
+/*  ================== NAVBAR ====================== */
+
+.nav {
+  top: 2vh;
+  position: fixed;
+}
+
+.text-secondary {
+  font-size: 2.4vh;
+  font-weight: bold;
+}
+/*  ================== CONTACT ME ====================== */
+
+.contact-me {
   position: relative;
-  align-self: flex-start;
-  top: 3%;
-  left: 3%;
+  top: 100%;
+}
+.form-message {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  width: 40%;
+  margin: 5% 30%;
+  /* position: absolute; */
+  /* left: 20%; */
+  /* height: auto; */
+  /* padding: 20px; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%);
+  z-index: 1; */
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: flex-start;
+}
+
+.label {
+  font-size: 3vh;
+  justify-content: flex-start;
+  margin-top: 3vh;
+}
+
+.input {
+  width: 100%;
 }
 
 /* =================== Media Queries =================== */
 
 @media screen and (max-width: 830px) {
+  .dark-mode,
+  .light-mode {
+    height: 100vh;
+  }
   svg {
-    width: 50%;
+    margin-top: 40%;
+    width: 80%;
   }
 
   .icon-toggle {
     font-size: 1.5em;
+  }
+
+  h1,
+  h2 {
+    font-size: 150%;
   }
 }

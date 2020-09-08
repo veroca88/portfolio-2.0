@@ -1,17 +1,16 @@
-import React, { useState, useRef } from "react";
-import { Link, Route, Switch } from "react-router-dom";
-
+import React, { useState } from "react";
+import ContactMe from "./ContactMe";
 import AboutMe from "./AboutMe";
 import MyWork from "./MyWork";
-import ContactMe from "./ContactMe";
-import NavbarPage from "./Navbar";
+
+import { Route } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 
 export default function MainPage() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
     <>
-      <NavbarPage />
       <i
         className="far fa-lightbulb fa-2x icon-toggle"
         style={{ color: darkMode ? "#999999" : "#fdab00" }}
@@ -2144,11 +2143,10 @@ export default function MainPage() {
         )}
         <h1>I'm Veronica</h1>
         <h2>a web developer</h2>
-
-        <section className="contact-me">
-          <ContactMe />
-        </section>
       </div>
+      <Route exact path="/aboutMe" component={AboutMe} />
+      <Route exact path="/contactMe" component={ContactMe} />
+      <Route exact path="/myWork" component={MyWork} />
     </>
   );
 }
