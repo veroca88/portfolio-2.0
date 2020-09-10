@@ -1,23 +1,21 @@
 import React, { useState } from "react";
-import ContactMe from "./ContactMe";
-import AboutMe from "./AboutMe";
-import MyWork from "./MyWork";
 
-import { Route } from "react-router-dom";
-import { Navbar } from "react-bootstrap";
-
-export default function MainPage() {
-  const [darkMode, setDarkMode] = useState(true);
+export default function MainPage({ color, id }) {
+  // const [darkMode, setDarkMode] = useState(true);
 
   return (
     <>
-      <i
+      {/* <i
         className="far fa-lightbulb fa-2x icon-toggle"
         style={{ color: darkMode ? "#999999" : "#fdab00" }}
         onClick={() => setDarkMode(!darkMode)}
-      ></i>
-      <div className={darkMode ? "dark-mode mode" : "light-mode mode"}>
-        {darkMode ? (
+      ></i> */}
+      <div
+        id={id}
+        className={color}
+        // className={darkMode ? "dark-mode mode" : "light-mode mode"}
+      >
+        {color === "dark-mode mode" ? (
           <svg viewBox="0 0 1110 749" xmlns="http://www.w3.org/2000/svg">
             <rect width="1110" height="749" fill="#2A2C31" />
             <g id="nigth-me 1" clipPath="url(#clip0)">
@@ -2144,9 +2142,6 @@ export default function MainPage() {
         <h1>I'm Veronica</h1>
         <h2>a web developer</h2>
       </div>
-      <Route exact path="/aboutMe" component={AboutMe} />
-      <Route exact path="/contactMe" component={ContactMe} />
-      <Route exact path="/myWork" component={MyWork} />
     </>
   );
 }

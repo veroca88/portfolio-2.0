@@ -10,6 +10,7 @@ html,
   font-family: "Roboto Mono", monospace;
   text-align: center;
   overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 h1 {
@@ -21,19 +22,24 @@ h1 {
 h2 {
   font-family: "Gayathri", sans-serif !important;
 }
+
 .mode {
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .dark-mode {
   background-color: #2a2c31;
   color: #fffff7;
+  font-weight: bold;
+  height: max-content;
 }
 
 .light-mode {
   background-color: #fffff7;
   color: #20295a;
+  font-weight: bold;
+  height: max-content;
 }
 
 svg {
@@ -53,34 +59,45 @@ svg {
 /*  ================== NAVBAR ====================== */
 
 .nav {
+  width: 50%;
   top: 2vh;
   position: fixed;
+  z-index: 2;
 }
 
 .text-secondary {
   font-size: 2.4vh;
   font-weight: bold;
+  cursor: pointer;
+  width: 10vw;
+}
+
+.brand {
+  color: teal;
+  font-size: 5vh;
+  padding: 2%;
+}
+/*  ================== MY WORK ====================== */
+
+.my-work-section {
+  height: fit-content;
+}
+.card-title {
+  overflow: hidden;
 }
 /*  ================== CONTACT ME ====================== */
 
-.contact-me {
+/* .contact-me {
   position: relative;
   top: 100%;
-}
+} */
 .form-message {
   display: flex;
   justify-content: center;
-  background: white;
+  /* background: white; */
   border-radius: 5px;
   width: 40%;
   margin: 5% 30%;
-  /* position: absolute; */
-  /* left: 20%; */
-  /* height: auto; */
-  /* padding: 20px; */
-  /* top: 50%; */
-  /* transform: translate(-50%, -50%);
-  z-index: 1; */
 }
 
 .contact-me-form {
@@ -103,21 +120,30 @@ svg {
 /* =================== Media Queries =================== */
 
 @media screen and (max-width: 830px) {
-  .dark-mode,
-  .light-mode {
-    height: 100vh;
+  h1,
+  h2 {
+    font-size: 150%;
   }
   svg {
     margin-top: 40%;
     width: 80%;
   }
+  .dark-mode,
+  .light-mode {
+    height: 100vh;
+  }
 
   .icon-toggle {
     font-size: 1.5em;
   }
+  .text-secondary {
+    width: 100%;
+  }
 
-  h1,
-  h2 {
-    font-size: 150%;
+  Row {
+    text-align: center;
+  }
+  .my-work-section {
+    height: fit-content;
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContactMe() {
+export default function ContactMe({ id, color }) {
   const initialValues = {
     subject: "",
     email: "",
@@ -29,7 +29,7 @@ export default function ContactMe() {
   };
   return (
     <>
-      <div className="contact-me">
+      <div id={id} className={`contact-me ${color}`}>
         <div className="form-message">
           <form onSubmit={saveMessage} className="contact-me-form">
             <label htmlFor="subject" className="label">
