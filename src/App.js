@@ -15,7 +15,7 @@ function App() {
         style={{ color: darkMode ? "#999999" : "#fdab00" }}
         onClick={() => setDarkMode(!darkMode)}
       ></i>
-      <Navbar />
+      <Navbar color={darkMode ? "dark-mode mode" : "light-mode mode"} />
       <MainPage
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
         id="aboutMe"

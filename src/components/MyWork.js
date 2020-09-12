@@ -2,6 +2,8 @@ import React from "react";
 import ClipPortfolio from "./images/portfolio-erick-perez.jpg";
 import Ecommerce from "./images/ecommerce.jpg";
 import MiaWallet from "./images/miaWallet.jpg";
+import MatrixGame from "./images/memory-matrix-game.jpg";
+import BrainGame from "./images/training-brain-game.jpg";
 import { Card, Row, Col, Container } from "react-bootstrap";
 
 export default function MyWork({ id, color }) {
@@ -9,13 +11,7 @@ export default function MyWork({ id, color }) {
     <div className={`my-work-section ${color}`} id={id}>
       <Container fluid="md">
         <Row>
-          <Col
-            xs={12}
-            md={8}
-            lg={6}
-            className={`my-work-section ${color}`}
-            // style={{ width: "18rem" }}
-          >
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={ClipPortfolio} />
             <Card.Body>
               <Card.Title>Portfolio Client</Card.Title>
@@ -34,13 +30,7 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
-          <Col
-            xs={12}
-            md={8}
-            lg={6}
-            className={`my-work-section ${color}`}
-            // style={{ width: "18rem" }}
-          >
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MiaWallet} />
             <Card.Body>
               <Card.Title>Budgeting App</Card.Title>
@@ -48,8 +38,8 @@ export default function MyWork({ id, color }) {
                 MiaWallet is a budgeting web application, helps users create and
                 manage budgets, to track how much money users are taking in and
                 how much they spend.
-                <p>** Team Project **</p>
               </Card.Text>
+              <p>** Team Project **</p>
               <a
                 className="text-primary"
                 href="https://miawallet.herokuapp.com ‌"
@@ -58,13 +48,7 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
-          <Col
-            xs={12}
-            md={8}
-            lg={6}
-            className={`my-work-section ${color}`}
-            // style={{ width: "18rem" }}
-          >
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={Ecommerce} />
             <Card.Body>
               <Card.Title>E-commerce Site</Card.Title>
@@ -77,6 +61,41 @@ export default function MyWork({ id, color }) {
               <a
                 className="text-primary"
                 href="https://aware-ecommerce.netlify.app/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={MatrixGame} />
+            <Card.Body>
+              <Card.Title>The Matrix Game</Card.Title>
+              <Card.Text>
+                The Matrix is a memory game. It has the presentation page where
+                is the instructions of the game and also where you can chose the
+                leves, the design of the computer is pure CSS.
+              </Card.Text>
+              <a
+                className="text-primary"
+                href="https://veroca88.github.io/linux-memory-game/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={BrainGame} />
+            <Card.Body>
+              <Card.Title>Where did I put my keys?</Card.Title>
+              <Card.Text>
+                The Matrix is a memory game. It has the presentation page where
+                is the instructions of the game and also where you can chose the
+                leves, the design of the computer is pure CSS.
+              </Card.Text>
+              <a
+                className="text-primary"
+                href="https://veroca88.github.io/project_1TheGame/"
               >
                 Visit project
               </a>
