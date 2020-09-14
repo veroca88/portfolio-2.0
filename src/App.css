@@ -34,7 +34,7 @@ h3 {
 }
 
 .mode {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -42,14 +42,14 @@ h3 {
   background-color: #2a2c31;
   color: #fffff7;
   font-weight: bold;
-  height: auto;
+  /* height: auto; */
 }
 
 .light-mode {
   background-color: #fffff7;
   color: #20295a;
   font-weight: bold;
-  height: auto;
+  /* height: auto; */
 }
 
 svg {
@@ -87,7 +87,7 @@ textarea {
 nav.responsive-nav {
   position: fixed;
   width: 100%;
-  min-height: auto;
+  height: 8vh;
   z-index: 2;
 }
 
@@ -296,7 +296,6 @@ a:link {
   }
   /* contact me ======  */
   .title {
-    font-size: 3.5vh;
     overflow: hidden;
   }
   .contact-me {
