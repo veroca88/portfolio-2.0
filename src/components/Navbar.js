@@ -11,7 +11,11 @@ export default function Navig({ color }) {
   return (
     <nav className={`responsive-nav ${color}`}>
       <figure onClick={() => setNavOpen(!navOpen)}>
-        <i className="fas fa-server fa-2x logo-nav"></i>
+        {/* <i class="far fa-caret-square-down"></i> */}
+        <i
+          style={{ color: color === "dark-mode mode" ? "#999999" : "#fdab00" }}
+          className="fas fa-chevron-circle-down fa-2x logo-nav"
+        ></i>
       </figure>
       <ul
         style={{
@@ -29,7 +33,7 @@ export default function Navig({ color }) {
             to="aboutMe"
             className="navbar-link"
           >
-            About me!
+            About
           </Link>
         </li>
         <li className={navOpen ? "" : "li-desactive"}>
@@ -43,7 +47,7 @@ export default function Navig({ color }) {
             to="myWork"
             className="navbar-link"
           >
-            My Work
+            Work
           </Link>
         </li>
         <li className={navOpen ? "" : "li-desactive"}>
@@ -57,7 +61,7 @@ export default function Navig({ color }) {
             to="contactMe"
             className="navbar-link"
           >
-            Keep in Touch
+            Contact
           </Link>
         </li>
       </ul>

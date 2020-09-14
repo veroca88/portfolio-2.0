@@ -23,6 +23,16 @@ h2 {
   font-family: "Gayathri", sans-serif !important;
 }
 
+h3 {
+  font-size: 3vh;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  margin: 1.5%;
+  color: #ffffff;
+  overflow: hidden;
+}
+
 .mode {
   height: 100vh;
   overflow: hidden;
@@ -32,14 +42,14 @@ h2 {
   background-color: #2a2c31;
   color: #fffff7;
   font-weight: bold;
-  height: max-content;
+  height: auto;
 }
 
 .light-mode {
   background-color: #fffff7;
   color: #20295a;
   font-weight: bold;
-  height: max-content;
+  height: auto;
 }
 
 svg {
@@ -49,50 +59,36 @@ svg {
   width: 80vh;
 }
 
+input {
+  height: 6vh;
+  text-align: left;
+  padding-left: 2%;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+textarea {
+  text-align: left;
+  padding-left: 2%;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
 .icon-toggle {
   position: fixed;
   cursor: pointer;
-  top: 4vh;
+  top: 3vh;
   right: 5vh;
   z-index: 3;
 }
 
 /*  ================== NAVBAR ====================== */
 
-/* .nav {
-  width: auto;
-  top: 2vh;
-  position: fixed;
-  z-index: 2;
-}
-
-.text-secondary {
-  font-size: 2.4vh;
-  font-weight: bold;
-  cursor: pointer;
-  width: 10vw;
-}
-
-.lightMode-icon {
-  color: #fdab00;
-}
-
-.darkMode-icon {
-  color: #999999;
-}
-.logo-nav {
-  cursor: pointer;
-}
-
-figure {
-  margin: 0;
-} */
-/* ============================================= */
-
 nav.responsive-nav {
   position: fixed;
   width: 100%;
-  min-height: 14vh;
+  min-height: auto;
+  z-index: 2;
 }
 
 nav.responsive-nav > ul {
@@ -101,9 +97,13 @@ nav.responsive-nav > ul {
 
 nav > ul > li {
   list-style-type: none;
-  padding: 20px;
+  padding: 20px 5px;
   float: right;
-  width: 10%;
+}
+
+nav > ul > li > a {
+  cursor: pointer;
+  padding: 15px 25px;
 }
 
 a:link {
@@ -116,10 +116,55 @@ a:link {
   display: none;
 }
 
+.navbar-link {
+  font-size: 2.5vh;
+}
+/*  ================== ABOUT ME ====================== */
+.terminal {
+  border: 5px solid #535353;
+  height: max-content;
+  background-color: black;
+  margin: 2% 20%;
+  color: green;
+  text-align: left;
+}
+.head {
+  justify-content: space-between;
+  background: #535353;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+}
+
+.about-me {
+  text-align: left;
+  font-size: 2.7vh;
+  line-height: 2;
+  margin: 2% 0% 0% 2%;
+}
+
+.icon-skill {
+  color: #ffffff;
+  margin: 5% 10%;
+}
+.title {
+  font-size: 5vh;
+  overflow: hidden;
+  /* margin-bottom: 3%; */
+}
+
+.fas {
+  align-self: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: #ffffff;
+}
+
 /*  ================== MY WORK ====================== */
 
 .my-work-section {
   height: fit-content;
+  padding: 2%;
 }
 .card-title {
   overflow: hidden;
@@ -131,7 +176,7 @@ a:link {
   justify-content: center;
   border-radius: 5px;
   width: 40%;
-  margin: 5% 30%;
+  margin: 2% 30%;
 }
 
 .contact-me-form {
@@ -151,6 +196,34 @@ a:link {
   width: 100%;
 }
 
+.btn {
+  cursor: pointer;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  color: #000000;
+  /* font-size: 4vh; */
+  font-weight: bold;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: solid #292929 3px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #c9c9c9;
+  text-decoration: none;
+}
+
+.sm {
+  cursor: pointer;
+  font-size: 2vh !important;
+  padding: 5px 5px !important;
+  margin-left: 20vh;
+  margin-top: 5vh;
+}
+
 /* =================== Media Queries =================== */
 
 @media screen and (max-width: 768px) {
@@ -159,19 +232,12 @@ a:link {
   }
   h1,
   h2 {
-    font-size: 150%;
+    font-size: 200%;
   }
   svg {
     margin-top: 40%;
-    width: 80%;
-  }
-  /* .dark-mode,
-  .light-mode {
-    height: 100vh;
-  } */
-
-  .my-work-section {
-    height: fit-content;
+    margin-bottom: 14%;
+    width: 90%;
   }
   /* navbar ============ */
   nav.responsive-nav {
@@ -205,6 +271,7 @@ a:link {
 
   nav.responsive-nav > ul > li > a {
     padding-right: 25%;
+    cursor: pointer;
   }
 
   .logo-nav {
@@ -222,5 +289,37 @@ a:link {
 
   .text-type {
     font-size: 2rem;
+  }
+
+  .navbar-link {
+    padding: 10%;
+  }
+  /* contact me ======  */
+  .contact-me {
+    height: 100vh;
+  }
+
+  .form-message {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .sm {
+    font-size: 2.3vh !important;
+  }
+
+  /*  about me ===== */
+  .terminal {
+    margin: 35% 1%;
+    height: 110vh;
+  }
+  .fas {
+    font-size: 1.3em;
+  }
+  .head {
+    height: 6vh;
+  }
+  h3 {
+    margin: 0;
   }
 }

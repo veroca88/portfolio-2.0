@@ -30,6 +30,7 @@ export default function ContactMe({ id, color }) {
   return (
     <>
       <div id={id} className={`contact-me ${color}`}>
+        <h2 className="title">Keep in touch</h2>
         <div className="form-message">
           <form onSubmit={saveMessage} className="contact-me-form">
             <label htmlFor="subject" className="label">

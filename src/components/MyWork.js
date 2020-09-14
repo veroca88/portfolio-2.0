@@ -8,7 +8,8 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 
 export default function MyWork({ id, color }) {
   return (
-    <div className={`my-work-section ${color}`} id={id}>
+    <div id={id} className={`my-work-section ${color}`}>
+      <h2 className="title">Some things I've build</h2>
       <Container fluid="md">
         <Row>
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
