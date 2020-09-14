@@ -164,13 +164,15 @@ a:link {
 
 .my-work-section {
   height: fit-content;
-  padding: 2%;
+  padding: 5% 2%;
 }
 .card-title {
   overflow: hidden;
 }
 /*  ================== CONTACT ME ====================== */
-
+.contact-me {
+  padding-top: 5%;
+}
 .form-message {
   display: flex;
   justify-content: center;
