@@ -90,9 +90,9 @@ export default function MyWork({ id, color }) {
             <Card.Body>
               <Card.Title>Where did I put my keys?</Card.Title>
               <Card.Text>
-                The Matrix is a memory game. It has the presentation page where
-                is the instructions of the game and also where you can chose the
-                leves, the design of the computer is pure CSS.
+                This is a training brain game, the objective is to get the key,
+                in your way to get the key you are going to solve some numerical
+                reasoning tests
               </Card.Text>
               <a
                 className="text-primary"

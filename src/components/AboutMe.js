@@ -1,5 +1,4 @@
 import React from "react";
-import Terminal from "./images/terminal.png";
 
 export default function AboutMe({ id, color }) {
   return (
@@ -12,7 +11,7 @@ export default function AboutMe({ id, color }) {
         </div>
         {/* <h3> veronica:~/About-me$</h3> */}
         <p className="about-me">
-          Software programming is fascinating, how we can take an idea, and
+          Software programming is so fascinating, how we can take an idea, and
           transformed in a solution to our daily living, that is what I enjoy
           doing everyday, creating new projects and learning new paths.
         </p>
