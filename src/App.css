@@ -234,11 +234,11 @@ a:link {
   }
 
   h3 {
-    font-size: 2.5vh;
+    /* font-size: 2.5vh; */
     margin: 0;
   }
   svg {
-    margin-top: 40%;
+    margin-top: 30%;
     margin-bottom: 10%;
     width: 90%;
   }
@@ -309,7 +309,7 @@ a:link {
 
   /*  about me ===== */
   .terminal {
-    margin: 35% 1%;
+    margin: 25% 1%;
   }
   .head {
     height: 6vh;
