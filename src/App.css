@@ -245,6 +245,7 @@ a:link {
   /* navbar ============ */
   nav.responsive-nav {
     z-index: 2;
+    height: 10vh;
   }
   nav.responsive-nav > ul {
     width: 50%;
@@ -253,6 +254,8 @@ a:link {
     flex-direction: column;
     transition: 3000ms ease all;
     z-index: inherit;
+    padding: 5%;
+    top: 10vh;
   }
 
   .li-desactive {
