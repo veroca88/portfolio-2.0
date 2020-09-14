@@ -54,12 +54,13 @@ svg {
   cursor: pointer;
   top: 4vh;
   right: 5vh;
+  z-index: 3;
 }
 
 /*  ================== NAVBAR ====================== */
 
-.nav {
-  width: 50%;
+/* .nav {
+  width: auto;
   top: 2vh;
   position: fixed;
   z-index: 2;
@@ -72,11 +73,49 @@ svg {
   width: 10vw;
 }
 
-.brand {
-  color: teal;
-  font-size: 5vh;
-  padding: 2%;
+.lightMode-icon {
+  color: #fdab00;
 }
+
+.darkMode-icon {
+  color: #999999;
+}
+.logo-nav {
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+} */
+/* ============================================= */
+
+nav.responsive-nav {
+  position: fixed;
+  width: 100%;
+  min-height: 14vh;
+}
+
+nav.responsive-nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  padding: 20px;
+  float: right;
+  width: 10%;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+.logo-nav {
+  cursor: pointer;
+  float: left;
+  display: none;
+}
+
 /*  ================== MY WORK ====================== */
 
 .my-work-section {
@@ -87,14 +126,9 @@ svg {
 }
 /*  ================== CONTACT ME ====================== */
 
-/* .contact-me {
-  position: relative;
-  top: 100%;
-} */
 .form-message {
   display: flex;
   justify-content: center;
-  /* background: white; */
   border-radius: 5px;
   width: 40%;
   margin: 5% 30%;
@@ -119,7 +153,10 @@ svg {
 
 /* =================== Media Queries =================== */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   h1,
   h2 {
     font-size: 150%;
@@ -128,22 +165,62 @@ svg {
     margin-top: 40%;
     width: 80%;
   }
-  .dark-mode,
+  /* .dark-mode,
   .light-mode {
     height: 100vh;
-  }
+  } */
 
-  .icon-toggle {
-    font-size: 1.5em;
-  }
-  .text-secondary {
-    width: 100%;
-  }
-
-  Row {
-    text-align: center;
-  }
   .my-work-section {
     height: fit-content;
+  }
+  /* navbar ============ */
+  nav.responsive-nav {
+    z-index: 2;
+  }
+  nav.responsive-nav > ul {
+    width: 50%;
+    height: auto;
+    position: fixed;
+    flex-direction: column;
+    transition: 3000ms ease all;
+    z-index: inherit;
+  }
+
+  .li-desactive {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    flex-direction: column;
+    top: 14vh;
+    margin-right: 0%;
+    display: none;
+  }
+
+  nav > ul > li {
+    width: 100%;
+    padding: 5px;
+    margin-left: 10%;
+    list-style-type: none;
+  }
+
+  nav.responsive-nav > ul > li > a {
+    padding-right: 25%;
+  }
+
+  .logo-nav {
+    margin-left: 5%;
+    cursor: pointer;
+    display: block;
+  }
+
+  figure {
+    z-index: 3;
+    cursor: pointer;
+    display: block;
+    margin-top: 5%;
+  }
+
+  .text-type {
+    font-size: 2rem;
   }
 }
