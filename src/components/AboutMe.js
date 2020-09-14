@@ -29,7 +29,7 @@ export default function AboutMe({ id, color }) {
             <i class="fab fa-github fa-3x icon-skill"></i>
           </a>
 
-          <a href="https://github.com/veroca88">
+          <a href="https://www.linkedin.com/in/veroca/">
             <i class="fab fa-linkedin-in fa-3x icon-skill"></i>
           </a>
         </div>
