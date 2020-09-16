@@ -30,6 +30,20 @@ export default function Navig({ color }) {
             smooth={true}
             offset={-70}
             duration={500}
+            to="home"
+            className="navbar-link"
+          >
+            Home
+          </Link>
+        </li>
+        <li className={navOpen ? "" : "li-desactive"}>
+          <Link
+            onClick={closeNav}
+            // activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             to="aboutMe"
             className="navbar-link"
           >

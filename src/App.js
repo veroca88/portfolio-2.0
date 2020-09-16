@@ -18,9 +18,12 @@ function App() {
       <Navbar color={darkMode ? "dark-mode mode" : "light-mode mode"} />
       <MainPage
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
-        id="aboutMe"
+        id="home"
       />
-      <AboutMe color={darkMode ? "dark-mode mode" : "light-mode mode"} />
+      <AboutMe
+        id="aboutMe"
+        color={darkMode ? "dark-mode mode" : "light-mode mode"}
+      />
       <MyWork
         id="myWork"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}

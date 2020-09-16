@@ -40,10 +40,10 @@ export default function MyWork({ id, color }) {
                 manage budgets, to track how much money users are taking in and
                 how much they spend.
               </Card.Text>
-              <p>** Team Project **</p>
+              <p>Team Project</p>
               <a
                 className="text-primary"
-                href="https://miawallet.herokuapp.com ‌"
+                href="https://miawallet.herokuapp.com/login"
               >
                 Visit project
               </a>

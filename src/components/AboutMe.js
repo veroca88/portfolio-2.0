@@ -5,11 +5,8 @@ export default function AboutMe({ id, color }) {
     <div className={color} id={id}>
       <div className="terminal">
         <div className="head">
-          <i class="fas fa-times fa-2x"></i>
           <h3> veronica:~/About-me</h3>
-          <i class="fas fa-bars fa-2x"></i>
         </div>
-        {/* <h3> veronica:~/About-me$</h3> */}
         <p className="about-me">
           Software programming is so fascinating, how we can take an idea, and
           transformed in a solution to our daily living, that is what I enjoy

@@ -1,20 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function MainPage({ color, id }) {
-  // const [darkMode, setDarkMode] = useState(true);
-
   return (
     <>
-      {/* <i
-        className="far fa-lightbulb fa-2x icon-toggle"
-        style={{ color: darkMode ? "#999999" : "#fdab00" }}
-        onClick={() => setDarkMode(!darkMode)}
-      ></i> */}
-      <div
-        id={id}
-        className={color}
-        // className={darkMode ? "dark-mode mode" : "light-mode mode"}
-      >
+      <div id={id} className={color}>
         {color === "dark-mode mode" ? (
           <svg viewBox="0 0 1110 749" xmlns="http://www.w3.org/2000/svg">
             <rect width="1110" height="749" fill="#2A2C31" />
