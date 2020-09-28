@@ -23,10 +23,7 @@ export default function MyWork({ id, color }) {
                 showcase of their work. Also has a contact me form to receive
                 messages directly to his email.
               </Card.Text>
-              <a
-                className="text-primary"
-                href="https://veroca88.github.io/erick-perez-portfolio"
-              >
+              <a className="text-primary" href="https://erickperez.info">
                 Visit project
               </a>
             </Card.Body>
