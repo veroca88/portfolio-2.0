@@ -21,17 +21,17 @@ function App() {
         id="home"
       />
       <AboutMe
-        id="aboutMe"
+        id="about-me"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
       />
       <MyWork
-        id="myWork"
+        id="my-work"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
       />
-      <ContactMe
-        id="contactMe"
+      {/* <ContactMe
+        id="contact-me"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
-      />
+      /> */}
     </div>
   );
 }

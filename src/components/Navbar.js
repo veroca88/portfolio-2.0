@@ -44,7 +44,7 @@ export default function Navig({ color }) {
             smooth={true}
             offset={-70}
             duration={500}
-            to="aboutMe"
+            to="about-me"
             className="navbar-link"
           >
             About
@@ -58,13 +58,13 @@ export default function Navig({ color }) {
             smooth={true}
             offset={-70}
             duration={500}
-            to="myWork"
+            to="my-work"
             className="navbar-link"
           >
             Work
           </Link>
         </li>
-        <li className={navOpen ? "" : "li-desactive"}>
+        {/* <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
             // activeClass="active"
@@ -72,12 +72,12 @@ export default function Navig({ color }) {
             smooth={true}
             offset={-70}
             duration={500}
-            to="contactMe"
+            to="contact-me"
             className="navbar-link"
           >
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
