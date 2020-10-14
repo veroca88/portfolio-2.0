@@ -25,7 +25,6 @@ export default function Navig({ color }) {
         <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
-            // activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
@@ -39,7 +38,6 @@ export default function Navig({ color }) {
         <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
-            // activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
@@ -53,7 +51,6 @@ export default function Navig({ color }) {
         <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
-            // activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
@@ -64,10 +61,9 @@ export default function Navig({ color }) {
             Work
           </Link>
         </li>
-        {/* <li className={navOpen ? "" : "li-desactive"}>
+        <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
-            // activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
@@ -77,7 +73,7 @@ export default function Navig({ color }) {
           >
             Contact
           </Link>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );

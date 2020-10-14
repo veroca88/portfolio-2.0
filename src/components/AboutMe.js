@@ -23,11 +23,11 @@ export default function AboutMe({ id, color }) {
         </p>
         <div>
           <a href="https://github.com/veroca88">
-            <i class="fab fa-github fa-3x icon-skill"></i>
+            <i className="fab fa-github fa-3x icon-skill"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/veroca/">
-            <i class="fab fa-linkedin-in fa-3x icon-skill"></i>
+            <i className="fab fa-linkedin-in fa-3x icon-skill"></i>
           </a>
         </div>
       </div>
