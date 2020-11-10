@@ -61,7 +61,7 @@ export default function Navig({ color }) {
             Work
           </Link>
         </li>
-        <li className={navOpen ? "" : "li-desactive"}>
+        {/* <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
             spy={true}
@@ -73,7 +73,7 @@ export default function Navig({ color }) {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
