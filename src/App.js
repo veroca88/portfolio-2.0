@@ -28,10 +28,10 @@ function App() {
         id="my-work"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
       />
-      <ContactMe
+      {/* <ContactMe
         id="contact-me"
         color={darkMode ? "dark-mode mode" : "light-mode mode"}
-      />
+      /> */}
     </div>
   );
 }
