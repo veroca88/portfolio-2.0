@@ -61,6 +61,7 @@ export default function Navig({ color }) {
             Work
           </Link>
         </li>
+        
         {/* <li className={navOpen ? "" : "li-desactive"}>
           <Link
             onClick={closeNav}
