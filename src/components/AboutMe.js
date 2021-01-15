@@ -9,17 +9,18 @@ export default function AboutMe({ id, color }) {
         </div>
         <p className="about-me">
           Software programming is so fascinating, how we can take an idea, and
-          transformed in a solution to our daily living, that is what I enjoy
+          transform it into a solution to our daily living, that is what I enjoy
           doing everyday, creating new projects and learning new paths.
         </p>
         <p className="about-me">
           I'm a well organized person, problem solver, independent professional
-          with high attention to detail.
+          with high attention to detail. I also love teamwork or pair programming, 
+          the communication is key.
         </p>
         <p className="about-me">
-          <i>Specialties:</i> JavaScript, Node.js, React.js, Express.js,
-          MongoDB, jQuery, HTML, CSS, Bootstrap, GitHub, Linux, Vim, Visual
-          Studio Code.
+          <i>Specialties:</i> JavaScript, Node.js, React.js, Express.js, MongoDB, 
+          jQuery, HTML, CSS, Bootstrap, Responsive‌ ‌Design,‌ Heroku,‌ ‌AJAX,‌ ‌Git,‌ ‌GitHub, 
+          Linux, Vim, Visual Studio Code.
         </p>
         <div>
           <a href="https://github.com/veroca88">

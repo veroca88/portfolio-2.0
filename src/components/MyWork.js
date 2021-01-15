@@ -102,23 +102,6 @@ export default function MyWork({ id, color }) {
             </Card.Body>
           </Col>
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
-            <Card.Img variant="top" src={BikeStore} />
-            <Card.Body>
-              <Card.Title>HTML/CSS Responsive Web Page</Card.Title>
-              <Card.Text>
-              The practice consists of a mix of flexible grids and layouts, 
-              images and an intelligent use of CSS media queries. As the user 
-              switches from their laptop to iPad, the website should automatically 
-              switch to accommodate for resolution, image size and scripting abilities.</Card.Text>
-              <a
-                className="text-primary"
-                href="https://veroca88.github.io/bikestore-webpage/"
-              >
-                Visit project
-              </a>
-            </Card.Body>
-          </Col>
-          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MatrixGame} />
             <Card.Body>
               <Card.Title>The Matrix Game</Card.Title>
