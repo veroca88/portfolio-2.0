@@ -26,6 +26,9 @@ export default function MyWork({ id, color }) {
                 through the website the field he is involving and presents a
                 showcase of their work. Also has a contact me form to receive
                 messages directly to his email.
+                <i className="tech_used">
+                Technologies Used:‌ ‌React.js, JavaScript, CSS, animation SVG, Express.js, Node.js, Axios, Nodemailer, Mailgun.‌
+                </i>
               </Card.Text>
               <a className="text-primary" href="https://erickperez.info">
                 Visit project
@@ -40,6 +43,9 @@ export default function MyWork({ id, color }) {
                 MiaWallet is a budgeting web application, helps users create and
                 manage budgets, to track how much money users are taking in and
                 how much they spend.
+                <i className="tech_used">
+                Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, SASS, Heroku, Axios, Nodemailer, Moment.js.‌ ‌  ‌
+                </i>
               </Card.Text>
               <p>Team Project</p>
               <a
@@ -76,6 +82,9 @@ export default function MyWork({ id, color }) {
               Weather app is an application that interacts with the MapBox and 
               weatherStack API, using a callback function. Browse for your weather 
               location. Future feature is a chart of weekly weather statistics*.
+              <i className="tech_used">
+                Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, Axios, Heroku, Chart.js*.‌  ‌
+                </i>
               </Card.Text>
               <a
                 className="text-primary"
@@ -90,29 +99,15 @@ export default function MyWork({ id, color }) {
             <Card.Body>
               <Card.Title>HTML/CSS Responsive Web Page</Card.Title>
               <Card.Text>
-                This is an example of responsive Web design is the approach 
-                that suggests that design and development should respond to 
-                the user’s behavior and environment based on screen size, platform and orientation.</Card.Text>
+                This is an example of static Website with responsive design, 
+                it is built with plain HTML and CSS.
+                <i className="tech_used">
+                Technologies Used:‌ ‌HTML, CSS, media queries.‌ ‌
+                </i>
+                </Card.Text>
               <a
                 className="text-primary"
                 href="https://veroca88.github.io/TinDog-webpage-prctc/"
-              >
-                Visit project
-              </a>
-            </Card.Body>
-          </Col>
-          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
-            <Card.Img variant="top" src={MatrixGame} />
-            <Card.Body>
-              <Card.Title>The Matrix Game</Card.Title>
-              <Card.Text>
-                The Matrix is a memory game. It has the presentation page where
-                is the instructions of the game and also where you can chose the
-                leves, the design of the computer is pure CSS.
-              </Card.Text>
-              <a
-                className="text-primary"
-                href="https://veroca88.github.io/linux-memory-game/"
               >
                 Visit project
               </a>
@@ -126,11 +121,35 @@ export default function MyWork({ id, color }) {
               <Card.Text>
                 This is a training brain game, the objective is to get the key,
                 in your way to get the key you are going to solve some numerical
-                reasoning tests
+                reasoning tests.
+                <i className="tech_used">
+                Technologies Used:‌ ‌JavaScript, Canvas, Bootstrap, JQuery, HTML, CSS.‌ ‌
+                </i>
               </Card.Text>
               <a
                 className="text-primary"
                 href="https://veroca88.github.io/project_1TheGame/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={MatrixGame} />
+            <Card.Body>
+              <Card.Title>The Matrix Game</Card.Title>
+              <Card.Text>
+                The Matrix is a memory game. It has the presentation page where
+                is the instructions of the game and also where you can chose the
+                leves, the design of the computer is pure CSS.
+                <i className="tech_used">
+                Technologies Used:‌ ‌JavaScript, HTML, CSS.‌ ‌
+                </i>
+              </Card.Text>
+              <a
+                className="text-primary"
+                href="https://veroca88.github.io/linux-memory-game/"
               >
                 Visit project
               </a>

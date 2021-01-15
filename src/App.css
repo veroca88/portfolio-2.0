@@ -167,6 +167,11 @@ a:link {
 .card-title {
   overflow: hidden;
 }
+.tech_used {
+  display: block;
+  padding-top: 1.5%;
+  color: #969696;
+}
 /*  ================== CONTACT ME ====================== */
 .contact-me {
   padding-top: 5%;

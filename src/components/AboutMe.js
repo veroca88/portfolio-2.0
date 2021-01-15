@@ -9,8 +9,8 @@ export default function AboutMe({ id, color }) {
         </div>
         <p className="about-me">
           Software programming is so fascinating, how we can take an idea, and
-          transform it into a solution to our daily living, that is what I enjoy
-          doing everyday, creating new projects and learning new paths.
+          transform it into a solution to our daily living, or find some bug and fix it.
+          That is what I enjoy doing everyday, creating new projects, debugging and learning new paths.
         </p>
         <p className="about-me">
           I'm a well organized person, problem solver, independent professional
