@@ -4,6 +4,10 @@ import Ecommerce from "./images/ecommerce.jpg";
 import MiaWallet from "./images/miaWallet.jpg";
 import MatrixGame from "./images/memory-matrix-game.jpg";
 import BrainGame from "./images/training-brain-game.jpg";
+import TinDog from "./images/TinDog.png";
+import BikeStore from "./images/Bikestore-webpage.png"
+import WeatherApp from "./images/weather_chartApp.png"
+
 import { Card, Row, Col, Container } from "react-bootstrap";
 
 export default function MyWork({ id, color }) {
@@ -40,13 +44,13 @@ export default function MyWork({ id, color }) {
               <p>Team Project</p>
               <a
                 className="text-primary"
-                href="https://miawallet.herokuapp.com/login"
+                href="https://github.com/veroca88/Ironhack-Project-2"
               >
                 Visit project
               </a>
             </Card.Body>
           </Col>
-          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+          {/* <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={Ecommerce} />
             <Card.Body>
               <Card.Title>E-commerce Site</Card.Title>
@@ -59,6 +63,56 @@ export default function MyWork({ id, color }) {
               <a
                 className="text-primary"
                 href="https://aware-ecommerce.netlify.app/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col> */}
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={WeatherApp} />
+            <Card.Body>
+              <Card.Title>Weather App</Card.Title>
+              <Card.Text>
+              Weather app is an application that interacts with the MapBox and 
+              weatherStack API, using a callback function. Browse for your weather 
+              location. Future feature is a chart of weekly weather statistics*.
+              </Card.Text>
+              <a
+                className="text-primary"
+                href="https://weather-chart-app.herokuapp.com/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={TinDog} />
+            <Card.Body>
+              <Card.Title>HTML/CSS Responsive Web Page</Card.Title>
+              <Card.Text>
+                This is an example of responsive Web design is the approach 
+                that suggests that design and development should respond to 
+                the user’s behavior and environment based on screen size, platform and orientation.</Card.Text>
+              <a
+                className="text-primary"
+                href="https://veroca88.github.io/TinDog-webpage-prctc/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={BikeStore} />
+            <Card.Body>
+              <Card.Title>HTML/CSS Responsive Web Page</Card.Title>
+              <Card.Text>
+              The practice consists of a mix of flexible grids and layouts, 
+              images and an intelligent use of CSS media queries. As the user 
+              switches from their laptop to iPad, the website should automatically 
+              switch to accommodate for resolution, image size and scripting abilities.</Card.Text>
+              <a
+                className="text-primary"
+                href="https://veroca88.github.io/bikestore-webpage/"
               >
                 Visit project
               </a>
@@ -99,6 +153,7 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
+          
         </Row>
       </Container>
     </div>
