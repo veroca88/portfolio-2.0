@@ -1,11 +1,9 @@
 import React from "react";
-import ClipPortfolio from "./images/portfolio-erick-perez.jpg";
-import Ecommerce from "./images/ecommerce.jpg";
+import Portfolio from "./images/example-portfolio.png";
 import MiaWallet from "./images/miaWallet.jpg";
 import MatrixGame from "./images/memory-matrix-game.jpg";
 import BrainGame from "./images/training-brain-game.jpg";
 import TinDog from "./images/TinDog.png";
-import BikeStore from "./images/Bikestore-webpage.png"
 import WeatherApp from "./images/weather_chartApp.png"
 
 import { Card, Row, Col, Container } from "react-bootstrap";
@@ -16,8 +14,8 @@ export default function MyWork({ id, color }) {
       <h2 className="title">Some things I've build</h2>
       <Container fluid="md">
         <Row>
-          {/* <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
-            <Card.Img variant="top" src={ClipPortfolio} />
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={Portfolio} />
             <Card.Body>
               <Card.Title>Portfolio Client</Card.Title>
               <Card.Text>
@@ -30,11 +28,11 @@ export default function MyWork({ id, color }) {
                 Technologies Used:‌ ‌React.js, JavaScript, CSS, animation SVG, Express.js, Node.js, Axios, Nodemailer, Mailgun.‌
                 </i>
               </Card.Text>
-              <a className="text-primary" href="https://erickperez.info">
+              <a className="text-primary" href="https://example-portfolio2021.herokuapp.com/">
                 Visit project
               </a>
             </Card.Body>
-          </Col> */}
+          </Col>
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MiaWallet} />
             <Card.Body>
