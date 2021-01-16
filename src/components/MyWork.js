@@ -16,7 +16,7 @@ export default function MyWork({ id, color }) {
       <h2 className="title">Some things I've build</h2>
       <Container fluid="md">
         <Row>
-          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+          {/* <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={ClipPortfolio} />
             <Card.Body>
               <Card.Title>Portfolio Client</Card.Title>
@@ -34,7 +34,7 @@ export default function MyWork({ id, color }) {
                 Visit project
               </a>
             </Card.Body>
-          </Col>
+          </Col> */}
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MiaWallet} />
             <Card.Body>
