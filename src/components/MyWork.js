@@ -152,7 +152,7 @@ export default function MyWork({ id, color }) {
             </Card.Body>
           </Col>
 
-          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+          {/* <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MatrixGame} />
             <Card.Body>
               <Card.Title>The Matrix Game</Card.Title>
@@ -171,7 +171,7 @@ export default function MyWork({ id, color }) {
                 Visit project
               </a>
             </Card.Body>
-          </Col>
+          </Col> */}
 
         </Row>
       </Container>
