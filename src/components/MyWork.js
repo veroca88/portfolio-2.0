@@ -5,6 +5,7 @@ import MatrixGame from "./images/memory-matrix-game.jpg";
 import BrainGame from "./images/training-brain-game.jpg";
 import TinDog from "./images/TinDog.png";
 import WeatherApp from "./images/weather_chartApp.png"
+import Citizenship from "./images/Citizenship_quest.png"
 
 import { Card, Row, Col, Container } from "react-bootstrap";
 
@@ -25,7 +26,7 @@ export default function MyWork({ id, color }) {
                 showcase of their work. Also has a contact me form to receive
                 messages directly to his email.
                 <i className="tech_used">
-                Technologies Used:‌ ‌React.js, JavaScript, CSS, animation SVG, Express.js, Node.js, Axios, Nodemailer, Mailgun.‌
+                  Technologies Used:‌ ‌React.js, JavaScript, CSS, animation SVG, Express.js, Node.js, Axios, Nodemailer, Mailgun.‌
                 </i>
               </Card.Text>
               <a className="text-primary" href="https://example-portfolio2021.herokuapp.com/">
@@ -42,7 +43,7 @@ export default function MyWork({ id, color }) {
                 manage budgets, to track how much money users are taking in and
                 how much they spend.
                 <i className="tech_used">
-                Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, SASS, Heroku, Axios, Nodemailer, Moment.js.‌ ‌  ‌
+                  Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, SASS, Heroku, Axios, Nodemailer, Moment.js.‌ ‌  ‌
                 </i>
               </Card.Text>
               <p>Team Project</p>
@@ -50,6 +51,24 @@ export default function MyWork({ id, color }) {
                 className="text-primary"
                 href="https://github.com/veroca88/Ironhack-Project-2"
               >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={Citizenship} />
+            <Card.Body>
+              <Card.Title>Q&A Citizenship App</Card.Title>
+              <Card.Text>
+                Multi-choice practice test application connected to an end-point
+                to fech all the official USCIS questions with multiple answers,
+                it shows by color and by score if the answer selected is correct
+                or incorrect.
+                <i className="tech_used">
+                  Technologies Used:‌ ‌Vue.js, Bootstrap-vue, customize Database, JSON.‌
+                </i>
+              </Card.Text>
+              <a className="text-primary" href="https://citizenship-test-practice.netlify.app/">
                 Visit project
               </a>
             </Card.Body>
@@ -77,11 +96,11 @@ export default function MyWork({ id, color }) {
             <Card.Body>
               <Card.Title>Weather App</Card.Title>
               <Card.Text>
-              Weather app is an application that interacts with the MapBox and 
-              weatherStack API, using a callback function. Browse for your weather 
-              location. Future feature is a chart of weekly weather statistics*.
+                Weather app is an application that interacts with the MapBox and
+                weatherStack API, using a callback function. Browse for your weather
+                location. Future feature is a chart of weekly weather statistics*.
               <i className="tech_used">
-                Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, Axios, Heroku, Chart.js*.‌  ‌
+                  Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, Axios, Heroku.‌  ‌
                 </i>
               </Card.Text>
               <a
@@ -97,12 +116,12 @@ export default function MyWork({ id, color }) {
             <Card.Body>
               <Card.Title>HTML/CSS Responsive Web Page</Card.Title>
               <Card.Text>
-                This is an example of static Website with responsive design, 
+                This is an example of static Website with responsive design,
                 it is built with plain HTML and CSS.
                 <i className="tech_used">
-                Technologies Used:‌ ‌HTML, CSS, media queries.‌ ‌
+                  Technologies Used:‌ ‌HTML, CSS, media queries.‌ ‌
                 </i>
-                </Card.Text>
+              </Card.Text>
               <a
                 className="text-primary"
                 href="https://veroca88.github.io/TinDog-webpage-prctc/"
@@ -121,7 +140,7 @@ export default function MyWork({ id, color }) {
                 in your way to get the key you are going to solve some numerical
                 reasoning tests.
                 <i className="tech_used">
-                Technologies Used:‌ ‌JavaScript, Canvas, Bootstrap, JQuery, HTML, CSS.‌ ‌
+                  Technologies Used:‌ ‌JavaScript, Canvas, Bootstrap, JQuery, HTML, CSS.‌ ‌
                 </i>
               </Card.Text>
               <a
@@ -142,7 +161,7 @@ export default function MyWork({ id, color }) {
                 is the instructions of the game and also where you can chose the
                 leves, the design of the computer is pure CSS.
                 <i className="tech_used">
-                Technologies Used:‌ ‌JavaScript, HTML, CSS.‌ ‌
+                  Technologies Used:‌ ‌JavaScript, HTML, CSS.‌ ‌
                 </i>
               </Card.Text>
               <a
@@ -153,7 +172,7 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
-          
+
         </Row>
       </Container>
     </div>
