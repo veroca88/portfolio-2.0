@@ -26,7 +26,6 @@ export default function MyWork({ id, color }) {
                   Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB Cluster, Mongoose, Bootstrap, AWS EC2.‌ ‌  ‌
                 </i>
               </Card.Text>
-              <p>Team Project</p>
               <a
                 className="text-primary"
                 href="http://sobretodotech.com/"
