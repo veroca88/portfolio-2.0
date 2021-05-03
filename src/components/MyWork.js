@@ -5,7 +5,8 @@ import MatrixGame from "./images/memory-matrix-game.jpg";
 import BrainGame from "./images/training-brain-game.jpg";
 import TinDog from "./images/TinDog.png";
 import WeatherApp from "./images/weather_chartApp.png"
-import Citizenship from "./images/Citizenship_quest.png"
+import Citizenship from "./images/Citizenship_quest.png";
+import Memento from "./images/MementoApp.png"
 
 import { Card, Row, Col, Container } from "react-bootstrap";
 
@@ -15,6 +16,26 @@ export default function MyWork({ id, color }) {
       <h2 className="title">Some things I've build</h2>
       <Container fluid="md">
         <Row>
+          <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
+            <Card.Img variant="top" src={Memento} />
+            <Card.Body>
+              <Card.Title>Memento</Card.Title>
+              <Card.Text>
+                Memento Web App is a tool that helps you manage your important links, you can create, edit, reuse and delete your links. It is deploying using AWS EC2.
+                <i className="tech_used">
+                  Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB Cluster, Mongoose, Bootstrap, AWS EC2.‌ ‌  ‌
+                </i>
+              </Card.Text>
+              <p>Team Project</p>
+              <a
+                className="text-primary"
+                href="http://sobretodotech.com/"
+              >
+                Visit project
+              </a>
+            </Card.Body>
+          </Col>
+
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={Portfolio} />
             <Card.Body>
@@ -34,6 +55,7 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
+
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={MiaWallet} />
             <Card.Body>
@@ -55,6 +77,8 @@ export default function MyWork({ id, color }) {
               </a>
             </Card.Body>
           </Col>
+
+
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
             <Card.Img variant="top" src={Citizenship} />
             <Card.Body>
