@@ -21,7 +21,7 @@ export default function MyWork({ id, color }) {
             <Card.Body>
               <Card.Title>Memento</Card.Title>
               <Card.Text>
-                Memento Web App is a tool helps you manage your important links, it has implemented authorization method to protect access to your account. You can create, edit, reuse and delete your links. It is deploying using AWS EC2.
+                Memento Web App is a tool helps you manage your important links, it has implemented authorization and authentication methods to protect access to your account. You can create, edit, reuse and delete your links. It is deploying using AWS EC2.
                 <i className="tech_used">
                   Technologies Used:‌ ‌JavaScript, Express.js, Node.js, MongoDB Cluster, Mongoose, Bootstrap, AWS EC2.‌ ‌  ‌
                 </i>
