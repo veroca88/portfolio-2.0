@@ -7,7 +7,7 @@ import TinDog from "./images/TinDog.png";
 import WeatherApp from "./images/weather_chartApp.png"
 import Citizenship from "./images/Citizenship_quest.png";
 import Memento from "./images/MementoApp.png"
-import BussinesDirectory from "./images/BussinessCo.png"
+import BusinessDirectory from "./images/BusinessCo.png"
 
 import { Card, Row, Col, Container } from "react-bootstrap";
 
@@ -18,13 +18,13 @@ export default function MyWork({ id, color }) {
       <Container fluid="md">
         <Row>
           <Col xs={12} md={8} lg={6} className={`my-work-section ${color}`}>
-            <Card.Img variant="top" src={BussinesDirectory} />
+            <Card.Img variant="top" src={BusinessDirectory} />
             <Card.Body>
-              <Card.Title>Bussines Directory</Card.Title>
+              <Card.Title>Business Directory</Card.Title>
               <Card.Text>
-                Bussines directory web app has around of two hundred of companies data, you can search by name, category or description. Once you have found the company you can click in the company name and see all its information and a chart that show all the funding during its operation.
+                Business directory web app has around of two hundred of companies data, you can search by name, category or description. Once you have found the company you can click in the company name and see all its information and a chart that show all the funding during its operation.
                 <i className="tech_used">
-                  Technologies Used:‌ ‌Chart.js, Axios, JavaScript, Express.js, Node.js, MongoDB Cluster, Bootstrap, JQuery.‌ ‌  ‌
+                  Technologies Used:‌ ‌Chart.js, Axios, Data Tables CDN, JavaScript, Express.js, Node.js, MongoDB Cluster, Bootstrap, JQuery.‌ ‌  ‌
                 </i>
               </Card.Text>
               <a
